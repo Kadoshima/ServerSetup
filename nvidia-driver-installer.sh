@@ -26,7 +26,7 @@ wget -O cuda-keyring.deb https://developer.download.nvidia.com/compute/cuda/repo
 sudo dpkg -i cuda-keyring.deb
 
 # ダウンロードしたcuda-keyringパッケージをインストール
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring.deb
 
 # aptの更新
 sudo apt-get update
