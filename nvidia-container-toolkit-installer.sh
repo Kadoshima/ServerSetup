@@ -20,3 +20,5 @@ systemctl restart docker
 
 docker pull nvidia/cuda:12.3.0-runtime-ubuntu22.04
 # print_header $(docker images ls)
+
+docker run --gpus all nvidia/cuda:12.3.0-runtime-ubuntu22.04 nvidia-smi

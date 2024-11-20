@@ -59,10 +59,11 @@ sudo usermod -aG docker "$USER"
 
 print_header "===== Dockerのインストール完了 ====="
 
-# グループ変更を即時反映（新しいシェルを起動）
+# グループ変更を即時反映（新しいシェルを起動）し、docker psを実行
+print_header "===== Dockerグループの変更を反映し、動作確認を実行 ====="
 newgrp docker << END
 echo "Dockerグループへの追加が反映されました。以下のコマンドで動作を確認できます。"
-echo "docker ps"
+docker ps
 END
 
 print_header "===== スクリプトの実行が完了しました ====="

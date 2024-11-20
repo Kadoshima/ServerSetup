@@ -14,7 +14,8 @@ print_header "既存のCUDA Toolkitを削除します"
 sudo apt-get -y purge cuda-toolkit-12-6
 
 print_header "新しいNVIDIA CUDA Toolkitをインストールします"
-sudo apt-get -y install cuda-toolkit-12-6
+# sudo apt-get -y install cuda-toolkit-12-6
+sudo apt -y install nvidia-cuda-toolkit
 
 print_header "環境変数を設定します"
 
