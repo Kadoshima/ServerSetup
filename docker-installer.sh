@@ -9,7 +9,7 @@ print_header() {
 }
 
 # スクリプトのエラーハンドリング
-set -e
+# set -e
 
 print_header "既存のDocker関連パッケージのアンインストール"
 
@@ -56,6 +56,8 @@ sudo systemctl enable docker
 
 # 現在のユーザーをdockerグループに追加
 sudo usermod -aG docker "$USER"
+
+newgrp docker
 
 print_header "===== Dockerのインストール完了 ====="
 

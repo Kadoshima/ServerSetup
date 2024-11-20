@@ -19,7 +19,7 @@ sudo apt --purge remove -y 'libcudnn*'
 sudo apt --purge remove -y 'cudnn-*'
 sudo apt autoremove -y
 
-set -e 
+# set -e 
 
 # NVIDIAのCUDAリポジトリから署名キーをダウンロード
 wget -O cuda-keyring.deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
