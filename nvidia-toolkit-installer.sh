@@ -1,6 +1,6 @@
 #!/bin/bash
 # set -e は必要に応じて有効にしてください
-set -e
+# set -e
 
 # ヘッダーを表示する関数
 print_header() {
